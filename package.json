@@ -1,7 +1,6 @@
 {
   "name": "doglist",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
@@ -17,10 +16,20 @@
     "express": "^4.16.3",
     "hbs": "^4.0.1",
     "lodash": "^4.17.5",
+    "method-override": "^2.3.10",
     "mongoose": "^5.0.14",
     "npm": "^5.8.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxu14/doglist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jxu14/doglist/issues"
+  },
+  "homepage": "https://github.com/jxu14/doglist#readme",
+  "description": ""
 }
