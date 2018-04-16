@@ -44,7 +44,7 @@ app.get('/dogs', (req, res) => {
 })
 
 app.get('/dogs/new', (req, res) => {
-    res.render('./dogs/new');
+    res.render('/Users/palycs/Desktop/webdev/doglist/app/views/dogs/new');
 })
 
 
@@ -67,7 +67,7 @@ app.post('/dogs', (req, res) => {
     })
 })
 
-app.delete('/dogs/:id', (req, res) =. {
+app.delete('/dogs/:id', (req, res) => {
     console.log('hit delete route');
 })
 
