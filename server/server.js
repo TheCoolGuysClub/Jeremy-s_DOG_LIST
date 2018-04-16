@@ -12,7 +12,7 @@ const app = express();
 
 //hbs setup
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, '../app/views/partials'));
+app.set('views', path.join(__dirname, '../app/views'));
 hbs.registerPartials(path.join(__dirname, '../app/views/partials'))
 
 //setup
@@ -26,25 +26,29 @@ mongoose.connect(database)
     console.log('unable to connect to database');
   })
 
+//middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(methodOverride('_method'));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/', (req, res) => {
   res.redirect('/dogs');
 })
 
 app.get('/dogs', (req, res) => {
-  Dog.find()
-    .then(dogs => {
-      res.send(dogs);
-    })
-    .catch(e => {
-      res.status(404).send();
-    })
+  // Dog.find()
+  //   .then(dogs => {
+  //     res.send(dogs);
+  //   })
+  //   .catch(e => {
+  //     res.status(404).send();
+  //   })
+  res.render('/Users/palycs/Desktop/webdev/doglist/app/views/dogs/index.hbs')
 })
 
 app.get('/dogs/new', (req, res) => {
-    res.render('/Users/palycs/Desktop/webdev/doglist/app/views/dogs/new');
+    res.render('./dogs/new');
 })
 
 
