@@ -44,7 +44,7 @@ app.get('/dogs', (req, res) => {
   //   .catch(e => {
   //     res.status(404).send();
   //   })
-  res.render('/Users/palycs/Desktop/webdev/doglist/app/views/dogs/index.hbs')
+  res.render('/Users/palycs/Desktop/webdev/doglist/app/views/dogs/index.hbs');
 })
 
 app.get('/dogs/new', (req, res) => {
