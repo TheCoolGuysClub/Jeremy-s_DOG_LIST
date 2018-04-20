@@ -1,0 +1,75 @@
+
+
+html {
+  color: black;
+  font-family: 'Patrick Hand', helvetica;
+  font-variant: small-caps;
+  margin: 20px;
+}
+
+#create {
+  height: 50px;
+  width: 300px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.dogCard {
+  border: solid;
+  border-width: 5px;
+  border-color: blue;
+  padding: 10px;
+  width: 40%;
+}
+
+
+input {
+  border-radius: 5px;
+  height: 50px;
+  width: 500px;
+  background: lightgrey;
+  font-size: 30px;
+}
+
+#newsubmit {
+  background: lightgreen;
+}
+
+.home-button {
+  height: 50px;
+  width: 100px;
+}
+.del-but {
+  background-color: pink;
+}
+
+.upd-but {
+  background-color: orange;
+}
+
+button {
+  background-color: lightgray;
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+}
+
+p {
+  font-size: 30px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+img {
+  margin: 20px 0px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

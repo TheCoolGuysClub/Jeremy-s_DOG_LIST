@@ -9,11 +9,19 @@ const dogSchema = mongoose.Schema({
   age: {
     type: Number,
     required: true
+  },
+  picture:{
+    type:String,
+    required:false
+  },
+  description:{
+    type:String,
+    required:false
+  },
+  personality:{
+    type:String,
+    required:false
   }
-  // picture: {
-  //   type: String,
-  //   required: true
-  // }
 })
 
 const Dog = mongoose.model('Dog', dogSchema);

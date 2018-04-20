@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Show</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+  </head>
+  <body>
+    <button type="button" name="button" class="home-button">  <a href="home">Home</a></button>
+    <!-- <button type="button" name="button"><a href="new">Create</a></button> -->
+
+    <div id="dogs">
+        <img id="dogPicture" src="{{dog.picture}}" alt="No Picture Provided">
+        <p id="dogName">Name: {{dog.name}} </p>
+        <p id="dogAge">{{dog.age}} years old</p>
+        <p id="dogDescription">Description: {{dog.description}}</p>
+        <p id="dogPersonality">Personality: {{dog.personality}}</p>
+        <br>
+
+        <form class="" action="/dogs/{{dog.id}}?_method=UPDATE" method="post">
+          <button type="submit" name="button" class="upd-but">Update</button>
+        </form>
+        <form action="/dogs/{{dog.id}}?_method=DELETE" method="post" >
+        <button type="submit" name="button" class="del-but">Delete this dog</button>
+        </form>
+
+    </div>
+
+
+
+  </body>
+</html>

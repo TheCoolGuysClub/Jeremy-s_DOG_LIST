@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>New Dog</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
   </head>
   <body>
-    <h1>create a dog</h1>
+    <h1 id="newTitle">ADD A NEW DOG</h1>
     <form action="/dogs" method="post">
-      <label for="dogName"></label>
-      <input id="dogName" type="text" name="name" placeholder="name">
-      <label for="dogAge"></label>
-      <input id="dogAge" type="text" name="age" placeholder="age">
-      <input type="submit" value="Create New Dog">
+      <!-- <label for="dogName">Name</label> -->
+      <input id="dogName" type="text" name="name" placeholder="Dog's Name">
+      <br>
+      <!-- <label for="dogAge">Age</label> -->
+      <input id="dogAge" type="text" name="age" placeholder="Dog's Age">
+      <br>
+      <!-- <label for="dogDescription">Description</label> -->
+      <input id="dogDescription" type="text" name="description" placeholder="Type Your Dog's Description Here">
+      <br>
+      <!-- <label for="dogPicture">PictureUrl</label> -->
+      <input id="dogPicture" type="text" name="picture" placeholder="Paste Your Dog's Picture's URL here">
+      <br>
+      <!-- <label for="dogPersonality">Personality Type</label> -->
+      <input id="dogPersonality" type="text" name="personality" placeholder="What's your Dog's Personality Like?">
+      <br>
+      <input type="submit" value="Create New Dog" id="newsubmit">
     </form>
   </body>
 </html>
